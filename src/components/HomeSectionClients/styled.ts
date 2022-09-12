@@ -1,12 +1,15 @@
-import styled from 'styled-components';
-import media from '../../styles/media';
-import { sizes, colors, gridSize } from '../../styles/variables';
+import { colors, gridSize, sizes } from '../../styles/variables';
+
 import appsmithUrl from './appsmith.svg';
+import bairavaMotorsUrl from './bairava-motors.png';
 import castorUrl from './castor.svg';
+import elElyonUrl from './el-elyon.png';
 import finderUrl from './finder.svg';
 import framerUrl from './framer.svg';
 import googleUrl from './google.svg';
 import hugoUrl from './hugo.svg';
+import media from '../../styles/media';
+import styled from 'styled-components';
 
 export const CasesItemsContainer = styled.div`
   display: grid;
@@ -85,4 +88,12 @@ export const FramerLogo = styled(Logo).attrs({
 
 export const FinderLogo = styled(Logo).attrs({
   src: finderUrl,
+})``;
+export const ElElyonLogo = styled(Logo).attrs({
+  src: elElyonUrl,
+})`
+  height: 96px;
+`;
+export const BairavaMotorsLogo = styled(Logo).attrs({
+  src: bairavaMotorsUrl,
 })``;

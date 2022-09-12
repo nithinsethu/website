@@ -1,7 +1,9 @@
 import * as React from 'react';
+
+import { Container, Credentials, Legal, LicenseName } from './styled';
+
 import { JSXChildrenProp } from '../../types';
 import Link from '../Link';
-import { Container, Credentials, Legal, LicenseName } from './styled';
 
 interface FooterProps {
   className?: string;
@@ -25,8 +27,11 @@ const Footer = ({
   <Container className={className}>
     <Credentials>
       <span>
-        {linkToHome ? <Link href="/">PerfPerfPerf</Link> : 'PerfPerfPerf'} ·{' '}
-        2018–2022
+        {linkToHome ? (
+          <Link href="/">Spades Software Solutions Private Limited</Link>
+        ) : (
+          'Spades Software Solutions Private Limited'
+        )}
         {license && (
           <span>
             {' '}
@@ -41,10 +46,12 @@ const Footer = ({
       <span>🖤</span>
     </Credentials>
     <Legal>
-      Sole proprietorship (eenmanszaak). Herengracht 551, 1017 BW Amsterdam,
-      Netherlands. KvK no. 86522469. VAT ID NL004265772B46.{' '}
-      <a href="/legal/terms/">Terms and Conditions</a>.{' '}
-      <a href="/legal/privacy/">Privacy Policy</a>
+      1, Ramachandrapuram, Southveli street Madurai-625001.
+      <br />
+      CIN: U72901TN2022PTC154975 <br />
+      <a href="mailto:spadessoftwares@gmail.com">spadessoftwares@gmail.com</a>.
+      <br />
+      Ph no: 9789585127; 8754159989
     </Legal>
   </Container>
 );

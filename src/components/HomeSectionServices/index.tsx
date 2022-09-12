@@ -1,26 +1,28 @@
-import { graphql, StaticQuery } from 'gatsby';
 import * as React from 'react';
-import { GraphqlImage } from '../../types';
-import { SectionKind } from '../Section';
+
 import {
   ActionButton,
-  Column,
-  ImageText,
-  DesktopImage,
-  MobileImageWrapper,
-  MobileImage,
-  Note,
-  Text,
-  Columns,
-  H3,
-  Section,
-  SvgMask,
   Blockquote,
   BlockquoteFooter,
   BlockquoteImage,
   BlockquoteName,
   BlockquoteTextWrapper,
+  Column,
+  Columns,
+  DesktopImage,
+  H3,
+  ImageText,
+  MobileImage,
+  MobileImageWrapper,
+  Note,
+  Section,
+  SvgMask,
+  Text,
 } from './styled';
+import { StaticQuery, graphql } from 'gatsby';
+
+import { GraphqlImage } from '../../types';
+import { SectionKind } from '../Section';
 
 interface ServicesSectionProps {
   className?: string;
@@ -45,7 +47,7 @@ interface ServicesSectionProps {
 
 const ServicesSection = ({ className = '', data }: ServicesSectionProps) => (
   <Section
-    title="Let’s make you fast&nbsp;🚀"
+    title="Let’s digitalise your business&nbsp;🚀"
     className={className}
     sectionKind={SectionKind.VERTICAL}
   >
@@ -70,36 +72,36 @@ const ServicesSection = ({ className = '', data }: ServicesSectionProps) => (
         imageData={data.auditDesktop.childImageSharp.gatsbyImageData}
       />
       <Text>
-        <H3>Find What To Improve&nbsp;🔬</H3>
+        <H3>Machine learning Applications;🔬</H3>
         <p>
-          <strong>What:</strong> we’ll analyze the site, identify all
-          performance issues, and tell you which ones matter the most &amp; how
-          to fix them.
+          <strong>What:</strong> We provide end to end machine learning
+          applications, from data extraction, transformation, modelling and
+          analytics.
         </p>
         <p>
-          <strong>Great when:</strong> you want to learn how to improve your
-          Core Web Vitals, conversion, or user experience.
+          <strong>Great when:</strong> automation is the need of the hour, we
+          can build machine learning applications to automate complex tasks.
         </p>
         <Blockquote>
           <BlockquoteTextWrapper>
             <p>
-              I want to marry that audit document! The level of detail,
-              including going through our own codebase and pin-pointing where
-              exactly improvements need to happen, it’s just... wow
+              Automation of business activities using machine learning
+              applications helps to scale the business. Business using
+              Artificial intelligence have a big edge over their competition.
             </p>
           </BlockquoteTextWrapper>
-          <BlockquoteFooter>
+          {/* <BlockquoteFooter>
             <BlockquoteImage
               imageData={data.piotrAvatar.childImageSharp.gatsbyImageData}
             />
             <BlockquoteName>Piotr Krawiec</BlockquoteName> · Product Engineer @
             Framer
-          </BlockquoteFooter>
+          </BlockquoteFooter> */}
         </Blockquote>
-        <Note>
+        {/* <Note>
           <strong>Want an example?</strong> See this{' '}
           <a href="/blog/notion/">public Notion case study</a>.
-        </Note>
+        </Note> */}
       </Text>
     </ImageText>
     <ImageText
@@ -118,26 +120,26 @@ const ServicesSection = ({ className = '', data }: ServicesSectionProps) => (
         imageData={data.optimizationDesktop.childImageSharp.gatsbyImageData}
       />
       <Text>
-        <H3>Optimize the App&nbsp;🛠</H3>
+        <H3>Mobile application;🛠</H3>
         <p>
-          <strong>What:</strong> we’ll join your project, roll up our sleeves,
-          find all performance bottlenecks, and apply precise optimizations –
-          all by ourselves.
+          <strong>What:</strong> we build cross platform applications that run
+          on IOS and Android. Mobile application provide customised solutions
+          for various business needs.
         </p>
         <p>
-          <strong>Great when:</strong> you don’t want to distract the team from
-          delivering business functionality.
+          <strong>Great when:</strong> you need a personalised way to reach your
+          end customer.
         </p>
         <Blockquote>
           <BlockquoteTextWrapper>
             <p>
-              In just a couple weeks, Ivan significantly improved runtime
-              performance and tree shaking of our key components. One of our
-              products’ bundle got 3 times smaller – with 10× less JS needed for
-              the initial load!
+              Artificial intelligence on edge devices is deemed to be the next
+              big thing. Edge devices such as mobile provide valuable
+              information about the user. This enables to build smart mobile
+              application that provide unprecedented value to the user.
             </p>
           </BlockquoteTextWrapper>
-          <BlockquoteFooter>
+          {/* <BlockquoteFooter>
             <BlockquoteName>
               <BlockquoteImage
                 imageData={data.davidAvatar.childImageSharp.gatsbyImageData}
@@ -145,7 +147,7 @@ const ServicesSection = ({ className = '', data }: ServicesSectionProps) => (
               David Sigley
             </BlockquoteName>{' '}
             · Head of Engineering @ Castor
-          </BlockquoteFooter>
+          </BlockquoteFooter> */}
         </Blockquote>
       </Text>
     </ImageText>
@@ -167,26 +169,24 @@ const ServicesSection = ({ className = '', data }: ServicesSectionProps) => (
       <Text>
         <H3>Grow The Team&nbsp;🧑‍💻</H3>
         <p>
-          <strong>What:</strong> we’ll teach your team everything we know about
-          React performance or Core Web Vitals. We’ll take a bunch of slow
-          sites, figure out what makes them slow, and gradually fix every
-          performance issue we encounter.
+          <strong>What:</strong> web application have taken the business
+          universe by storm. We build interactive, effective web applications
+          for our clients.
         </p>
         <p>
-          <strong>Great when:</strong> your team needs to learn how to keep you
-          fast on their own.
+          <strong>Great when:</strong> you need to interact with your clients
+          via the internet.
         </p>
         <Blockquote>
           <BlockquoteTextWrapper>
             <p>
-              Ivan is immensely knowledgeable in React, in performance and in
-              the combination of the two. I really recommend PerfPerfPerf’s
-              React workshop to developers interested in getting the most out of
-              their apps and in understanding the inner workings of React
-              profiling.
+              Web applications have become a necessity for business. 4-5% of the
+              world’s transactions are done through web applications. A fast and
+              interactive Web applications is an unique selling point for
+              businesses in today’s world.
             </p>
           </BlockquoteTextWrapper>
-          <BlockquoteFooter>
+          {/* <BlockquoteFooter>
             <BlockquoteName>
               <BlockquoteImage
                 imageData={data.nicolasAvatar.childImageSharp.gatsbyImageData}
@@ -194,19 +194,19 @@ const ServicesSection = ({ className = '', data }: ServicesSectionProps) => (
               Nicolás Delfino
             </BlockquoteName>{' '}
             · Lead consultant & Performance competence lead @ 1337
-          </BlockquoteFooter>
+          </BlockquoteFooter> */}
         </Blockquote>
-        <Note>
+        {/* <Note>
           <strong>Format:</strong> Online or offline&nbsp;· For either Junior or
           Senior engineers&nbsp;· Takes 12-16 hours
         </Note>
         <Note>
           <strong>32% of all respondents</strong> so far told the workshop was
           “even better than expected”
-        </Note>
+        </Note> */}
       </Text>
     </ImageText>
-    <Columns>
+    {/* <Columns>
       <Column>
         <H3>Open Source&nbsp;💛</H3>
         <p>
@@ -222,7 +222,7 @@ const ServicesSection = ({ className = '', data }: ServicesSectionProps) => (
           figure out how our experience can be relevant.
         </p>
       </Column>
-    </Columns>
+    </Columns> */}
     <ActionButton href="#contact">Get a quote</ActionButton>
   </Section>
 );

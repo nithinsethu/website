@@ -1,7 +1,8 @@
 import styled, { css } from 'styled-components';
-import media from '../../styles/media';
+
 import Link from '../Link';
 import _Logo from '../Logo';
+import media from '../../styles/media';
 
 const containerChildrenSpacingHorizontal = 24;
 export const Container = styled.div`
@@ -22,6 +23,9 @@ export const Logo = styled(_Logo)`
   width: 50px;
 `;
 
+export const ImageWrapper = styled.div`
+  max-height: 10px;
+`;
 export const ItemsWrapper = styled.div`
   flex: 1 0 auto;
   max-width: calc(100% - ${containerChildrenSpacingHorizontal}px);

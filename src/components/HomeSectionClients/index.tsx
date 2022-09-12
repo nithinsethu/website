@@ -1,10 +1,12 @@
 import * as React from 'react';
-import Section, { SectionKind } from '../Section';
+
 import {
   AppsmithLogo,
+  BairavaMotorsLogo,
   CasesItemsContainer,
   CastorLogo,
   Content,
+  ElElyonLogo,
   FinderLogo,
   FramerLogo,
   GoogleLogo,
@@ -14,6 +16,7 @@ import {
   Tag,
   TagContainer,
 } from './styled';
+import Section, { SectionKind } from '../Section';
 
 const ClientsSection = () => (
   <Section title="Cases" sectionKind={SectionKind.VERTICAL}>
@@ -22,14 +25,15 @@ const ClientsSection = () => (
         <LogoText>
           <GoogleLogo />
           <TagContainer>
-            <Tag>education</Tag>
+            <Tag>Automation system</Tag>
           </TagContainer>
         </LogoText>
         <p>
-          We worked with Google on educating developers about web performance.
-          This targets the long-term goal of making the web faster.
+          We worked with fishnet, on building a monitoring system, with Machine
+          learning. Fishnet was able to monitor it’s employees, thereby
+          exponentially increasing their company’s productivity.
         </p>
-        <ul>
+        {/* <ul>
           <li>
             <a href="https://developers.google.com/web/fundamentals/performance/webpack/decrease-frontend-size">
               A guide to making web apps faster with webpack
@@ -47,144 +51,131 @@ const ClientsSection = () => (
             </a>{' '}
             to practice optimization strategies
           </li>
-        </ul>
+        </ul> */}
 
         <blockquote>
           <p>
-            This is some of the highest quality tutorial style documentation on
-            webpack I’ve come across
+            Employee management and monitoring was a cumbersome task prior
+            Spade’s. Now we have Systematics tool, to deal with that problem.
           </p>
-          <footer>
-            <a href="https://twitter.com/TheLarkInn/status/961988627801587712">
-              Sean Larkin
-            </a>
-            , webpack’s core team
-          </footer>
+          <footer>Siddharth, MD @ Fishnet pvt limited</footer>
         </blockquote>
       </Content>
 
       <Content>
         <LogoText>
           <HugoLogo />
-          <p>
-            <a href="https://www.hugo.team">Hugo</a> helps to keep meeting notes
-            and tasks in one place.
-          </p>
           <TagContainer>
-            <Tag>react performance</Tag>
-            <Tag>core web vitals</Tag>
+            <Tag>OCR</Tag>
+            <Tag>Digitalisation</Tag>
           </TagContainer>
         </LogoText>
         <p>
-          The Hugo team was noticing their React app was slow here and there.
-          They weren’t sure what was causing that, so they reached out to
-          PerfPerfPerf for help.
+          The management team at JKT Agro Foods were finding it difficult to
+          track and categorise their physical expense bills.
         </p>
         <p>
-          We identified multiple loading and runtime performance optimizations
-          and guided Hugo through implementing them. As a result,{' '}
-          <Mark>
-            Hugo’s JS init time decreased 2.5×, the editor input latency
-            improved 1.7×,
-          </Mark>{' '}
-          and the Lighthouse score (even not being a goal) increased by 23
-          points.
+          We at Spades, used the Optical Character Recognition (OCR) technology
+          to convert these bills (images) to text, thereby making the entire
+          process digital. Now the company is able to track their expenses with{' '}
+          <Mark>100% precision.</Mark>{' '}
         </p>
         <blockquote>
           <p>
-            We were more than satisfied working with Ivan. Ivan communicated
-            very well throughout the whole process, and{' '}
-            <Mark>
-              the level of detail in his suggestions and recommendations was
-              just outstanding
-            </Mark>
-            .
+            We were more than satisfied working with Spade’s. Now we are able
+            digitalise our Business.{' '}
+            <Mark>The results are visible in our Balance sheets.</Mark>
           </p>
-          <footer>Christian Sampaio, CTO @ Hugo</footer>
+          <footer>Kannan, Md @ JKT Agrofoods</footer>
         </blockquote>
       </Content>
 
       <Content>
         <LogoText>
-          <FinderLogo />
-          <p>
-            <a href="http://finder.com.au/">Finder</a> helps 2 million
-            Australian customers track spending, find deals, and save money.
-          </p>
+          <ElElyonLogo />
+          <p>El elyon group of companies are into construction.</p>
           <TagContainer>
             <Tag>core web vitals</Tag>
           </TagContainer>
         </LogoText>
         <p>
-          A huge chunk of Finder’s new customers come to Finder from search.
-          Finder wanted to make the site faster and grow their organic traffic,
-          and they asked us to help.
+          In today’s digital world, website is a company’s identity. It’s really
+          important for companies to have a good impression. We at spade’s have
+          developed a website for el elyon.
         </p>
-        <p>
-          We helped Finder to move Core Web Vitals to green{' '}
-          <Mark>for 98% of their pages</Mark>. As a result,{' '}
-          <Mark>Finder’s organic traffic grew 50%</Mark>, and conversion also
-          increased.
-        </p>
+        <blockquote>
+          <p>
+            The website is our new identity, we have been able to connect with
+            clients across the globe. Our digital presence have increased our
+            revenue, thanks to spade’s.
+          </p>
+          <footer>Sales team @ el elyon group of companies.</footer>
+        </blockquote>
       </Content>
 
       <Content>
         <LogoText>
-          <CastorLogo />
-          <p>
-            <a href="https://www.castoredc.com/">Castor</a> is a tech platform
-            that makes clinical trials easier.
-          </p>
+          <BairavaMotorsLogo />
+          <p>Bairava motors are a vechile retail company.</p>
           <TagContainer>
             <Tag>react performance</Tag>
             <Tag>core web vitals</Tag>
           </TagContainer>
         </LogoText>
         <p>
-          Castor reached out to us when they were building a new product. They
-          noticed the product’s bundle was too large, realized Castor’s design
-          system caused this, but weren’t sure how to fix it.
+          Bairava motors reached out to us for a digital attendance application.
+          They had tried and tested various products available in the market but
+          weren’t comfortable with any.
         </p>
         <p>
-          We jumped in and made the design system load faster. We also optimized
-          the runtime performance of a few critical components.
+          We at Spade’s designed a flutter app, that uses bio-recognition and
+          geo-location to track attendance of employees, provide attendance
+          analytics to the management. Bairava motors are now able to register
+          attendance of their geographically distributed service engineers.
         </p>
         <blockquote>
           <p>
-            In just a couple weeks, Ivan significantly improved runtime
-            performance and tree shaking of our key components. One of our
-            products’ bundle got <Mark>3 times smaller</Mark> – with{' '}
-            <Mark>10× less JS needed for the initial load</Mark>.
+            Our service engineers go all over the place to service vechiles,
+            previously it was a tedious task to track employee attendance, now
+            with spade’s attendance software, we are able to track employee
+            attendance with ease.
           </p>
-          <footer>
-            <a href="https://www.linkedin.com/in/david-sigley-4a202353/?originalSubdomain=nl">
-              David Sigley
-            </a>
-            , Head of Engineering @ Castor
-          </footer>
+          <footer>Management @ Bairava</footer>
         </blockquote>
       </Content>
 
       <Content>
         <LogoText>
           <AppsmithLogo />
-          <p>
-            <a href="https://www.appsmith.com">Appsmith</a> is a low-code
-            platform for building internal apps.
-          </p>
+          <p>Kash Agro foods deals with agriculture commodities.</p>
           <TagContainer>
-            <Tag>react performance</Tag>
+            <Tag> Flutter</Tag>
+            <Tag>Notification</Tag>
+            <Tag>Utility Application</Tag>
           </TagContainer>
         </LogoText>
         <p>
-          With Appsmith, we did three React rendering performance audits. This
-          helped us to focus on different aspects of app’s UI speed. With audit
-          recommendations implemented, <Mark>the app got 1.9…2.8× faster</Mark>{' '}
-          across multiple user interactions.
+          We worked with Kash Agro foods on a notification application. There
+          was communication cap between Kash Agro foods and their clients on
+          changing commodity prices.
         </p>
+        <p>
+          We designed an application with an user friendly interface that would
+          update clients about changing commodity prices. This helped Kash Agro
+          foods <Mark>increase their revenue by 25% in FY2021-2022.</Mark>
+        </p>
+        <blockquote>
+          <p>
+            We are very satisfied by working with spades software solutions.
+            They service was very friendly. The project was completed before the
+            planned deadline. The application they have built for us has a
+            direct impact on our bottom line.
+          </p>
+          <footer>Akash MD @Kash Agro Foods</footer>
+        </blockquote>
       </Content>
 
-      <Content>
+      {/* <Content>
         <LogoText>
           <FramerLogo />
           <p>
@@ -223,7 +214,7 @@ const ClientsSection = () => (
             <a href="https://twitter.com/eelco">Eelco Lempsink</a>, CTO @ Framer
           </footer>
         </blockquote>
-      </Content>
+      </Content> */}
     </CasesItemsContainer>
   </Section>
 );

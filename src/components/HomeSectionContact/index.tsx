@@ -1,15 +1,17 @@
-import { StaticQuery, graphql } from 'gatsby';
 import * as React from 'react';
-import { GraphqlImage } from '../../types';
+
 import {
-  PromptContainer,
-  Container,
   Contact,
   ContactImage,
+  Container,
   Dot,
   Link,
   Prompt,
+  PromptContainer,
 } from './styled';
+import { StaticQuery, graphql } from 'gatsby';
+
+import { GraphqlImage } from '../../types';
 
 interface ContactSectionData {
   iamakulov: GraphqlImage;
@@ -25,19 +27,13 @@ const ContactSection = ({
 }: ContactSectionProps & { data: ContactSectionData }) => (
   <div className={className}>
     <Container>
-      <Link href="mailto:perf@3perf.com">
-        perf@3perf<Dot>.</Dot>com
+      <Link href="mailto:spadessoftwares@gmail.com" fontSize="42px">
+        spadessoftwares@gmail<Dot>.</Dot>com
       </Link>
       <PromptContainer>
         <Prompt>
           Interested? We’d be glad to help. Drop us an email, and{' '}
-          <Contact>
-            <ContactImage
-              imageData={data.iamakulov.childImageSharp.gatsbyImageData}
-            />{' '}
-            Ivan
-          </Contact>{' '}
-          will get back to you in 24 hours.
+          <Contact>Spades</Contact> will get back to you in 24 hours.
         </Prompt>
       </PromptContainer>
     </Container>

@@ -1,7 +1,8 @@
-import classnames from 'classnames';
 import * as React from 'react';
+
 import { Helmet } from 'react-helmet';
 import { LogoSvg } from './styled';
+import classnames from 'classnames';
 
 interface LogoProps {
   className?: string;

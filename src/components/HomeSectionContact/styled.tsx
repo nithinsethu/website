@@ -1,9 +1,10 @@
-import React from 'react';
-import styled, { keyframes } from 'styled-components';
-import media from '../../styles/media';
-import { linkStyles, linkActiveStyles } from '../../styles/shared-styles';
-import { gridSize } from '../../styles/variables';
 import Image, { ImageProps } from '../Image';
+import { linkActiveStyles, linkStyles } from '../../styles/shared-styles';
+import styled, { keyframes } from 'styled-components';
+
+import React from 'react';
+import { gridSize } from '../../styles/variables';
+import media from '../../styles/media';
 
 export const Container = styled.div`
   margin: 0 -60px;
@@ -48,8 +49,8 @@ const jump = keyframes`
   }
 `;
 
-export const Link = styled.a`
-  font-size: 84px;
+export const Link = styled.a<{ fontSize?: string }>`
+  font-size: ${({ fontSize }) => fontSize || `84px`};
   font-weight: bold;
 
   color: black;

@@ -1,31 +1,33 @@
-import { graphql } from 'gatsby';
 import * as React from 'react';
-import { Helmet } from 'react-helmet';
-import Footer from '../components/Footer';
-import AboutSection from '../components/HomeSectionAbout';
-import ClientsSection from '../components/HomeSectionClients';
-import MaterialsSection from '../components/HomeSectionMaterials';
-import ServicesSection from '../components/HomeSectionServices';
-import HomeSectionTestimonials from '../components/HomeSectionTestimonials';
-import Layout from '../components/Layout';
-import { LogoKind } from '../components/Logo';
-import { NavKind } from '../components/NavBase';
-import WidthWrapper from '../components/WidthWrapper';
+
 import {
   ActionButton,
-  FooterWrapper,
   ContactSection,
+  FooterWrapper,
+  H1,
   Header,
   HeaderBackground,
-  H1,
+  IndexPageGlobalStyles,
+  Mark,
   Nav,
   NewArticleBackground,
   NewArticleLink,
   SectionWrapper,
   ServicesBackground,
-  IndexPageGlobalStyles,
-  Mark,
 } from './index.styled';
+
+import AboutSection from '../components/HomeSectionAbout';
+import ClientsSection from '../components/HomeSectionClients';
+import Footer from '../components/Footer';
+import { Helmet } from 'react-helmet';
+import HomeSectionTestimonials from '../components/HomeSectionTestimonials';
+import Layout from '../components/Layout';
+import { LogoKind } from '../components/Logo';
+import MaterialsSection from '../components/HomeSectionMaterials';
+import { NavKind } from '../components/NavBase';
+import ServicesSection from '../components/HomeSectionServices';
+import WidthWrapper from '../components/WidthWrapper';
+import { graphql } from 'gatsby';
 
 interface IndexPageProps {
   data: {
@@ -72,15 +74,15 @@ const IndexPage = ({ data }: IndexPageProps) => (
         />
         <Header>
           <H1>
-            <Mark>Make your web app blazing fast</Mark>&nbsp;→ get more revenue
-            &amp; happier users
+            <Mark>Upgrade your business for the digital world</Mark>&nbsp;→ get
+            more revenue &amp; happy users
           </H1>
         </Header>
         <ActionButton kind="light" href="#contact">
           Get a quote
         </ActionButton>
       </WidthWrapper>
-      <NewArticleBackground>
+      {/* <NewArticleBackground>
         <WidthWrapper>
           <strong>New article:</strong>{' '}
           <NewArticleLink
@@ -89,7 +91,7 @@ const IndexPage = ({ data }: IndexPageProps) => (
             {data.allMarkdownRemark.edges[0].node.frontmatter.title}
           </NewArticleLink>
         </WidthWrapper>
-      </NewArticleBackground>
+      </NewArticleBackground> */}
     </HeaderBackground>
     <div>
       <WidthWrapper>

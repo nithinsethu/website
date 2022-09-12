@@ -10,7 +10,10 @@ const Nav = (props: NavBaseProps) => (
       { title: 'About Us', href: '/#about' },
     ]}
     secondaryItems={[
-      { title: 'perf@3perf.com', href: 'mailto:perf@3perf.com' },
+      {
+        title: 'spadessoftwares@gmail.com',
+        href: 'mailto:spadessoftwares@gmail.com',
+      },
     ]}
     {...props}
   />

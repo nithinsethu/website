@@ -1,8 +1,9 @@
 import * as React from 'react';
-import { LogoKind } from '../Logo';
+
 import {
   BlockLink,
   Container,
+  ImageWrapper,
   Items,
   ItemsWrapper,
   Logo,
@@ -10,6 +11,8 @@ import {
   PrimaryItem,
   SecondaryItem,
 } from './styled';
+
+import { LogoKind } from '../Logo';
 
 export interface NavBaseProps {
   className?: string;

@@ -1,18 +1,20 @@
-import { graphql, StaticQuery } from 'gatsby';
 import * as React from 'react';
-import { GraphqlImage } from '../../types';
-import Section, { SectionKind } from '../Section';
+
 import {
-  Intro,
+  Factoid,
   Image,
+  Intro,
   Link,
   LinkWrapper,
-  Primary,
   Links,
-  Wrapper,
-  Factoid,
   Number,
+  Primary,
+  Wrapper,
 } from './styled';
+import Section, { SectionKind } from '../Section';
+import { StaticQuery, graphql } from 'gatsby';
+
+import { GraphqlImage } from '../../types';
 
 interface AboutSectionData {
   talkImage: GraphqlImage;
@@ -27,13 +29,14 @@ const AboutSection = ({ data }: AboutSectionProps) => (
     <Wrapper>
       <Primary>
         <Intro>
-          PerfPerfPerf is ran by{' '}
-          <a href="http://twitter.com/iamakulov">Ivan Akulov</a>, a{' '}
-          <a href="https://developers.google.com/community/experts/directory">
-            Google Developer Expert
-          </a>
-          , an <a href="https://iamakulov.com/#talks">international speaker</a>,
-          and a web performance consultant.
+          PSpades software solution has the vision of delivering unparalleled
+          customer experience for our customers. The goal of our company is to
+          help digitalise small businesses. We provide business automation
+          solutions using artificial intelligence, web development, mobile
+          applications. We, at Spades software solution truly believe in make in
+          India, sell to the world. Digitalisation of business is an important
+          step towards that goal. Reach out to us to take your business digital
+          and sell your products for the world.
         </Intro>
         <Image imageData={data.talkImage.childImageSharp.gatsbyImageData} />
       </Primary>
